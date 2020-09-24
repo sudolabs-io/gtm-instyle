@@ -15,5 +15,5 @@
 homepage: "https://instyle.ai/"
 documentation: "https://github.com/sudolabs-io/gtm-instyle"
 versions:
-  - sha:
+  - sha: dc00da96edbaf7e6d242f34092d43f2fef85dd3c
     changeNotes: Initial Version
