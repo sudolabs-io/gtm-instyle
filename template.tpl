@@ -42,8 +42,9 @@ ___TEMPLATE_PARAMETERS___
 ___SANDBOXED_JS_FOR_WEB_TEMPLATE___
 
 const injectScript = require("injectScript");
+const encodeUriComponent = require("encodeUriComponent");
 
-const API_URL = "https://static.instyle.ai/gtm/pdp/" + data.clientId + ".js";
+const API_URL = "https://static.instyle.ai/gtm/pdp/" + encodeUriComponent(data.clientId) + ".js";
 
 injectScript(API_URL, data.gtmOnSuccess, data.gtmOnFailure);
 
@@ -98,6 +99,4 @@ scenarios:
 
 ___NOTES___
 
-Created on 9/24/2020, 12:20:47 PM
-
-
+Created on 9/29/2020, 9:52:04 PM
